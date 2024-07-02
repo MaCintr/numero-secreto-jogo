@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Número Secreto</title>
+</head>
+<body>
+    <div class="context">
+        <h1>Você consegue adivinhar o <strong>número secreto</strong>?</h1>
+        <div class="dificuldade">
+            <button id='btn-facil' class="">Fácil</button>
+            <button id='btn-dificil' class="inactive">Difícil</button>
+        </div>
+        <h3>
+            O número secreto está entre <span id="menor-valor">0</span> e
+            <span id="maior-valor">100</span>
+        </h3>
+        
+        <div id="chute" class="mensagem">
+          <div>Diga um número...</div>
+        </div>
+        <button id="jogar-novamente" class="hidden">Jogar novamente</button>
+    </div>
+    <div class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <script src="app/randomNumber.js"></script>
+    <script src="app/speechRecognition.js"></script>
+    <script src="app/validation.js"></script>
+  
+  </body>
+  
+</html>
